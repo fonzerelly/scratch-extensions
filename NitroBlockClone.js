@@ -312,6 +312,11 @@ class NitroBlock {
     }) {
         window.alert(string);
     }
+    linkto({
+        string
+    }) {
+        window.location.href = string;
+    }
     whenThis({
         bool
     }) {
