@@ -80,6 +80,16 @@ class NitroBlock {
                     }
                 }
             }, {
+                "opcode": "linkto",
+                "blockType": "command",
+                "text": "change url [string]",
+                "arguments": {
+                    "string": {
+                        "type": "string",
+                        "defaultValue": "http://www.google.com"
+                    }
+                }
+            }, {
                 "opcode": "whenThis",
                 "blockType": "hat",
                 "text": "when [bool]",
