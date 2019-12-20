@@ -1,11 +1,11 @@
-class SomeBlocks {
-    constructor (runtime) {
+class ProjectLink {
+    constructor () {
         /**
          * Store this for later communication with the Scratch VM runtime.
          * If this extension is running in a sandbox then `runtime` is an async proxy object.
          * @type {Runtime}
          */
-        this.runtime = runtime;
+        //this.runtime = runtime;
     }
     getInfo() {
 
@@ -46,7 +46,8 @@ class SomeBlocks {
         }
     }
     linkTo({ TEXT }) {
-        var txt = cleanUpText(TEXT, 1024);
-        window.location.href(txt)
+        
+        window.location.href(TEXT)
     }
 }
+Scratch.extensions.register(new ProjectLink());
